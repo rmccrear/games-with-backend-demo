@@ -8,7 +8,7 @@ export default function GameDisplay() {
         // Store result in state
         
         async function goFetch() {
-            const response = await fetch("http://167.71.255.241:3000/api/v1/games/qrstuvwxyz");
+            const response = await fetch("http://167.71.255.241:3000/api/v1/games/fa921d6c-18fb-4b1a-b39a-d2b9b17c4b6a");
             console.log(response);
             const data = await response.json();
             console.log(data);
