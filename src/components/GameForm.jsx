@@ -13,10 +13,10 @@ export default function GameForm() {
         }
         console.log(game)
         fetch("http://167.71.255.241:3000/api/v1/games/", {
-            method: "POST",
-            body: JSON.stringify(game),
+            method: "POST", // set method
+            body: JSON.stringify(game), // set body of request (convert JSON to String)
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json" // set type to JSON
             }
         });
     }
